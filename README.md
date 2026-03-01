@@ -1,4 +1,4 @@
-# Smart QoS-Scheduler
+# APP_LLM-Based Pomodoro Clock
 
 <div align="center">
 
@@ -23,9 +23,9 @@ A smart workstation fusing 5G network QoS scheduling with an LLM-powered anime c
 
 ## ✨ 项目简介 · Overview
 
-**Smart QoS-Scheduler** 是一个面向校园 / 企业场景的智能工作站。它将番茄钟、任务调度、5G QoS 网络申请与 LLM 虚拟角色（时雨）整合在同一个沉浸式虚拟房间界面中。
+**LLM-Based Pomodoro Clock** 是一个面向校园 / 企业场景的智能工作站。它将番茄钟、任务调度、5G QoS 网络申请与 LLM 虚拟角色（时雨）整合在同一个沉浸式虚拟房间界面中。
 
-**Smart QoS-Scheduler** is a campus/enterprise smart workstation that integrates a Pomodoro timer, task scheduling, 5G QoS network requests, and an LLM virtual character (Shiyu) into a single immersive virtual room interface.
+**LLM-Based Pomodoro Clock** is a campus/enterprise smart workstation that integrates a Pomodoro timer, task scheduling, 5G QoS network requests, and an LLM virtual character (Shiyu) into a single immersive virtual room interface.
 
 核心理念：**让 AI 助手感知你的工作状态，并在合适的时机主动帮你申请专属网络资源。**
 
