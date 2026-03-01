@@ -57,7 +57,7 @@ smart-qos-scheduler/
         ├── api/              # Fetch wrappers (chat / pdf / qos)
         └── utils/            # pdfChunking, jsonExtract
 ```
-
+(注：frontend部分内容需要额外创建文件夹并且迁移对应的文件 / Note: contexts in the frontend are not zipped in the file, creating a file named "frontend" is needed)
 ---
 
 ## 🚀 核心功能 · Features
@@ -90,7 +90,7 @@ idle ──[Start]──► focus ──[Time's up]──► break ──[Time's
 |-----------|----------|----------|
 | `show_qos_application_form` | AI 判断用户需要 QoS 服务 / AI determines QoS is needed | 自动打开 QosModal 并预填带宽建议值 / Auto-opens QosModal with pre-filled bandwidth |
 
-### 📄 Paper2Galgame · PDF 分析
+### 📄 PDF 分析 · PDF Analysis
 
 1. 前端用 `pdf.js` 提取 PDF 全文，按段落切片（默认 1500 字/块）/ Frontend extracts full text with `pdf.js` and slices it into ~1500-char chunks
 2. 按"分析深度"（10–50 次迭代）逐块发送给后端 LLM / Sends chunks to the backend LLM across 10–50 iterations based on the configured analysis depth
@@ -168,7 +168,7 @@ idle ──[Start]──► focus ──[Time's up]──► break ──[Time's
 ### 1. 克隆仓库 / Clone
 
 ```bash
-git clone https://github.com/your-username/smart-qos-scheduler.git
+git clone https://github.com/YuweiZhang-002/smart-qos-scheduler.git
 cd smart-qos-scheduler
 ```
 
