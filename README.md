@@ -92,11 +92,9 @@ idle ──[Start]──► focus ──[Time's up]──► break ──[Time's
 
 ### 📄 PDF 分析 · PDF Analysis
 
-1. 前端用 `pdf.js` 提取 PDF 全文，按段落切片（默认 1500 字/块）/ Frontend extracts full text with `pdf.js` and slices it into ~1500-char chunks
+1. 前端用 `pdf.js` 提取 PDF 全文/ Frontend extracts full text with `pdf.js` 
 2. 按"分析深度"（10–50 次迭代）逐块发送给后端 LLM / Sends chunks to the backend LLM across 10–50 iterations based on the configured analysis depth
-3. LLM 以角色口吻讲故事式解读，用户点击 / LLM interprets content in character voice; the user clicks:
-   - **听懂了 / Understood** → 进入下一块 / Advance to next chunk
-   - **再解释下 / Explain more** → 对当前块深化分析 / Deepen analysis on the current chunk
+3. LLM 以角色口吻讲故事式解读 / LLM interprets content in character voice
 4. 后端维护 `sessionId` 保持跨请求上下文 / Backend maintains `sessionId` for cross-request context
 
 ### 📡 QoS 网关申请 · QoS Gateway Request
@@ -268,5 +266,10 @@ const EMOTION_IMAGES: Record<string, string> = {
   normal: normalImg, happy: happyImg, thinking: thinkingImg,
   strict: strictImg, worried: worriedImg,
 };
+
+## 后续修正 · Further Actions
+1. 修正文档读取模块，允许用户向指定段落申请重复讲解 / Amend PDF Analysis module, enables user to request LLM repeat current text segment
+2. 添加文档批改模块，允许用户上传文档和参考标准（手动填写或者上传参考文档），LLM依照参考指导当前文章 / Introduce guidance function, enables user upload the document and reference (typed manually or upload a reference document) to LLM for guidance
+3. 添加人物角色/人物特征模块，允许用户自行上传人物形象或者设置人物内核 / Introduce creative function, enables user upload the character images or change the character's personalities
 ```
 
